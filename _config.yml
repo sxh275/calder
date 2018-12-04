@@ -26,6 +26,9 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+future: true
+permalink: none
 theme: minima
 plugins:
   - jekyll-feed
@@ -41,3 +44,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+
+# SASS settings, including Bootstrap SCSS files
+sass:
+  load_paths:
+  - _sass
+  style: compressed

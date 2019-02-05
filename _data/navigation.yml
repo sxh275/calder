@@ -1,5 +1,13 @@
 
-- name: Home
-  link: /
-- name: About
+- name: About Us
   link: /about.html
+- name: Mission
+  link: /mission.html
+- name: Ask A Librarian
+  link: /askalibrarian.html
+- name: Forms
+  link: /forms.html
+- name: Other Libraries
+  link: /otherlibraries.html
+- name: Staff List
+  link: /staff.html

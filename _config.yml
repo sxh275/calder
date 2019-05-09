@@ -31,7 +31,7 @@ future: true
 permalink: none
 
 #Theme
-theme: minima
+#theme: minima
 
 # SASS settings, including Bootstrap SCSS files
 sass:

@@ -1,25 +1,18 @@
 // Overwrite the basic Bootstrap variables and add your own variables
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 //Custom Sizes, Margins, Paddings
-$padding-xl:                    3.75rem; //60px
-$padding-lg: 					3rem; //48px
+$padding-xl:                    2.5rem; //40px
+$padding-lg: 					2.5rem; //40px
 $padding-md:                    1.5rem; //24px
 $padding-sm:					1.25rem; //20px
 $z-index-base:					10000;
 
 //Custom Colors
-$bit-blue:                      #24262e;
-$bit-blue-medium:               #1f2127;
-$bit-blue-dark:                 #0b0c10;
-$bit-teal:                      #00d2d4;
-$bit-orange:                    #ff9f55;
-$bit-grey:                      #83909a;
-
-$text-default:					#FFFFFF;
-$feature:                       #1f2127;
-$feature-light: 				#f1f4fc;
+$um-orange:                     #f47321;
+$text-default:					#212529;
+$feature:                       #f8f9fa;
 
 
 // Custom Durations
@@ -31,18 +24,18 @@ $duration: (
 // -------------------------
 
 // Theme Colors
-$primary:       				$bit-teal;
-$secondary:                     $bit-orange;
+$primary:       				$um-orange;
+$secondary:                     $feature;
 $gray-300:                      #dee2e6;
 
 // Body
-$body-bg:                       $bit-blue;
+$body-bg:                       #FFFFFF;
 $body-color: 					$text-default;
 
 // Links
-$link-color: 					$bit-teal;
+$link-color: 					#007bff;
 $link-decoration:           	none;
-$link-hover-color:          	lighten($bit-teal, 30%);
+$link-hover-color:          	lighten($link-color, 30%);
 $link-hover-decoration:     	none;
 $link-bkg-color:                transparent;
 
@@ -53,8 +46,7 @@ $grid-breakpoints: (
         md: 768px,
         lg: 992px,
         lg2: 1024px,
-        xl: 1200px,
-        xl2: 1600px
+        xl: 1200px
 
 );
 
@@ -69,8 +61,8 @@ $container-max-widths: (
 $spacer: 1rem;
 
 // Fonts
-$font-family-base:              "Barlow", Helvetica, sans-serif;
-$font-family-sans-serif: 		"Barlow", Helvetica, sans-serif;
+$font-family-base:              "Lato", Helvetica, sans-serif;
+$font-family-sans-serif: 		"Lato", Helvetica, sans-serif;
 
 $font-size-base:              	1rem; // Assumes the browser default, set to 16px
 $font-size-lg:                	($font-size-base * 3);	//48px
@@ -98,7 +90,7 @@ $line-height-lg:              	1.4;
 $line-height-sm:              	1.2;
 
 $border-width:                	1px;
-$border-color:                	$bit-grey;
+$border-color:                	$feature;
 
 $border-radius:               	.25rem;
 $border-radius-circle:        	50%;
@@ -109,7 +101,7 @@ $card-bg:                           transparent;
 
 // Figures
 $figure-caption-font-size:          $font-size-base;
-$figure-caption-color:              $bit-grey;
+$figure-caption-color:              $feature;
 
 // Tooltips
 $tooltip-font-size:           $font-size-base;
@@ -120,23 +112,11 @@ $table-cell-padding:          .75rem;
 $table-cell-padding-sm:       .25rem;
 
 $table-bg:                    transparent;
-$table-accent-bg:             $bit-blue-medium;
+$table-accent-bg:             $feature;
 
-$table-head-bg:               $bit-blue-dark;
-$table-head-color:            $body-color;
+$table-head-bg:               #CCC;
+$table-head-color:            $text-default;
 
-// Pagination
-$pagination-color:                  #FFF;
-$pagination-bg:                     $bit-blue-medium;
-$pagination-border-color:           $bit-grey;
-
-$pagination-hover-color:            $bit-blue-dark;
-$pagination-hover-bg:               $bit-teal;
-$pagination-hover-border-color:     $bit-grey;
-
-$pagination-active-color:           $bit-blue-dark;
-$pagination-active-bg:              $bit-teal;
-$pagination-active-border-color:    $bit-grey;
 
 // Bootstrap Default Variables.
 @import "../bootstrap4/functions";

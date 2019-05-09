@@ -37,7 +37,6 @@ theme: minima
 sass:
   load_paths:
     - _sass
-    - font-awesome
   style: compressed
 
 # PLUGINS

@@ -53,3 +53,4 @@ exclude:
   - font-awesome/scss
   - README.md
   - nul
+  - calder.iml

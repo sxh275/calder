@@ -1,43 +1,17 @@
 <header>
-<div class="container-fluid">
-    <h1 id="header"> </h1>
-
-
-</div>
-
-<!-- Navigation -->
-<div>
-
-    <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
-        <a href="https://calder.med.miami.edu/index.htm" class="navbar-brand d-flex w-40 mr-auto"><img src="https://calder.med.miami.edu/images/calderheaderlogo.jpg" style="border-radius:4px;" height="80" width="auto" alt="University of Miami Libraries"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg calder-nav">
+        <a href="{{ site.url }}" class="navbar-brand">
+            <img src="{{ 'assets/images/calderheaderlogo.jpg' | absolute_url }}" alt="Louis Calder Memorial Library - University of Miami Libraries">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-            <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Ask A Librarian</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Forms</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Mission</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Other Libraries</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Staff List</a>
-                </li>
-            </ul>
-            <a href="https://calder.med.miami.edu/index.html" class="nav navbar-nav ml-auto w-40 justify-content-end"><img src="https://calder.med.miami.edu/images/uhealth-300.jpg" style="border-radius:4px;" height="80" width="auto" alt="University of Miami Libraries"></a>
-
+        <div class="collapse navbar-collapse" id="mainNav">
+                {% include navigation.html %}
         </div>
+        <a href="http://uhealthsystem.com/" class="uhealth d-none d-lg-inline-block">
+            <img src="{{ 'assets/images/uhealth-300.jpg' | absolute_url }}" alt="University of Miami Health System">
+        </a>
     </nav>
-
-
 </header>

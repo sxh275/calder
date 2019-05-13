@@ -1,13 +1,33 @@
-
-- name: About Us
-  link: /2019-05-08-about.html
-- name: Mission
-  link: /mission.html
+- name: About
+  link: /about.html
+  local_path: true
 - name: Ask A Librarian
   link: /askalibrarian.html
+  local_path: true
 - name: Forms
   link: /forms.html
+  local_path: true
+- name: Mission
+  link: /mission.html
+  local_path: true
 - name: Other Libraries
-  link: /otherlibraries.html
+  dropdowns:
+    - subname: Mary and Edward Norton Library of Ophthalmology
+      sublink: https://bascompalmer.org/physician-resources/library-services
+      subpath:
+    - subname: Otto G. Richter Library
+      sublink: https://library.miami.edu/
+      subpath:
+    - subname: Rosenstiel School of Marine and Atmospheric Science Library
+      sublink: https://library.miami.edu/rsmaslib/index.html
+      subpath:
+    - subname: University of Miami Law Library
+      sublink: https://library.miami.edu/rsmaslib/index.html
+      subpath:
+    - subname: Inside
+      sublink: /about.html
+      subpath: true
+  dropdown_id: OtherLibDropdown
 - name: Staff List
   link: /staff.html
+  local_path: true

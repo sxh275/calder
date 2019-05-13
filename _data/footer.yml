@@ -1,0 +1,15 @@
+- name: Blackboard
+  link: https://www.miami.edu/blackboard
+  local_path:
+- name: Emergency Preparedness
+  link: https://prepare.miami.edu/
+  local_path:
+- name: Employment
+  link: https://www.miami.edu/employment
+  local_path:
+- name: Feedback
+  link: "mailto:sxh2751@med.miami.edu"
+  local_path:
+- name: Privacy Statement and Legal Notices
+  link: https://welcome.miami.edu/privacy-and-legal/privacy/index.html
+  local_path:

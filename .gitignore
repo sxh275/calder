@@ -1,5 +1,11 @@
-_site
+.DS_Store
+#Jekyll
+/_site/
 .sass-cache
 .jekyll-metadata
+
+node_modules/
+
+# IDE
 .idea/
 calder.iml

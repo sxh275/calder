@@ -1,0 +1,57 @@
+# Site settings
+title: University of Miami Calder Medical Library
+email: sxh2751@med.miami.edu
+meta_description: The University of Miami Calder Medical Library services and activities form the scope of knowledge-based information through clinically-oriented resources and systems to the Miller School of Medicine and affiliated organizations.
+meta_keywords: University of Miami, UMH, Louis Calder Memorial Library, UM, Miller, Medicine, Nursing, Health Studies, Graduate
+#baseurl: "" # subpath of your site, e.g. /blog
+url: "https://calder.med.miami.edu/"
+
+author: Louis Calder Memorial Library
+street_address: 1601 NW 10th Ave
+city: Miami
+state: FL
+zip_code: 33136
+po_box: P.O. Box 016950 (R-950)
+po_box_2: Miami, FL 33101
+country: United States of America
+phone: 305-243-6403
+fax: 305-325-9670
+
+# Social settings
+facebook_url: https://www.facebook.com/CalderMedLib/
+instagram_url: https://www.instagram.com/caldermedlib/
+twitter_url: https://twitter.com/CalderMedLib?lang=en
+
+# Google services
+google_analytics: UA-2776065-1
+
+# Build settings
+charset: UTF-8
+markdown: kramdown
+highlighter: rouge
+future: true
+permalink: none
+
+#Theme
+#theme: minima
+
+# SASS settings, including Bootstrap SCSS files
+sass:
+  load_paths:
+    - _sass
+  style: compressed
+
+# PLUGINS
+plugins:
+  - jekyll-autoprefixer
+  - jekyll-feed
+
+# Do NOT INCLUDE inside _site folder
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - font-awesome/scss
+  - README.md
+  - nul
+  - calder.iml

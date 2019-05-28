@@ -1,52 +1,57 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Calder Medical Library
+title: University of Miami Calder Medical Library
 email: sxh2751@med.miami.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  The Medical Library for the University of Miami Miller School of Medicine.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+meta_description: The University of Miami Calder Medical Library services and activities form the scope of knowledge-based information through clinically-oriented resources and systems to the Miller School of Medicine and affiliated organizations.
+meta_keywords: University of Miami, UMH, Louis Calder Memorial Library, UM, Miller, Medicine, Nursing, Health Studies, Graduate
+baseurl: "/calder" # subpath of your site, e.g. /blog
+url: "http://0.0.0.0:4000" # https://calder.med.miami.edu/
+
+author: Louis Calder Memorial Library
+street_address: 1601 NW 10th Ave
+city: Miami
+state: FL
+zip_code: 33136
+po_box: P.O. Box 016950 (R-950)
+po_box_2: Miami, FL 33101
+country: United States of America
+phone: 305-243-6403
+fax: 305-325-9670
+
+# Social settings
+facebook_url: https://www.facebook.com/CalderMedLib/
+instagram_url: https://www.instagram.com/caldermedlib/
+twitter_url: https://twitter.com/CalderMedLib?lang=en
+
+# Google services
+#google_analytics: UA-2776065-1
 
 # Build settings
+charset: UTF-8
 markdown: kramdown
 highlighter: rouge
 future: true
 permalink: none
-theme: minima
-plugins:
-  - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-
+#Theme
+#theme: minima
 
 # SASS settings, including Bootstrap SCSS files
 sass:
   load_paths:
-  - _sass
+    - _sass
   style: compressed
+
+# PLUGINS
+plugins:
+  - jekyll-autoprefixer
+  - jekyll-feed
+
+# Do NOT INCLUDE inside _site folder
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - font-awesome/scss
+  - README.md
+  - nul
+  - calder.iml

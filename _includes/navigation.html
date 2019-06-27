@@ -1,8 +1,18 @@
-
-<nav>
+<ul class="navbar-nav flex-lg-nowrap justify-content-lg-between justify-content-xl-around">
     {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-        {{ item.name }}
-    </a>
+    <li class="nav-item{% if item.dropdowns %} dropdown{% endif %}">
+        {% if item.dropdowns %}
+            <a class="nav-link dropdown-toggle" href="#" id="{{ item.dropdown_id }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ item.name }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="{{ item.dropdown_id }}">
+                {% for entry in item.dropdowns %}
+                <a class="dropdown-item" href="{% if entry.subpath == true %}{{ entry.sublink | absolute_url }}{% else %}{{ entry.sublink }}{% endif %}">{{ entry.subname }}</a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <a class="nav-link{% if page.url == item.link %} current{% endif %}" href="{% if item.local_path == true %}{{ item.link | absolute_url }}{% else %}{{ item.link }}{% endif %}">{{ item.name }}</a>
+            {% endif %}
+    </li>
     {% endfor %}
-</nav>
+</ul>

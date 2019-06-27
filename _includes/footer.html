@@ -1,31 +1,32 @@
-
-
 <footer>
-    <div class="container-fluid padding bg-light">
-        <div class="row text-center">
-            <div class="col-md-4">
-                <hr class="light">
-                <p>Louis Calder Memorial Library</p>
-                <p>1601 NW 10th Ave Miami, FL 33136</p>
-                <p>P.O. Box 016950 (R-950)</p>
-                <p>Miami, FL 33101</p>
+    <div class="container">
+        <div class="row text-md-center">
+            <div class="col-sm-6">
+                <h5><a href="{{ site. url }}">{{ site. author }}</a></h5>
+                <p>{{ site.street_address }} {{ site.city}}, {{ site.state}} {{ site.zip_code}}</p>
+                <p>{{ site.po_box }}<br />
+                {{ site.po_box_2 }}
+                </p>
+                <p>Tel: {{ site.phone }}<br />
+                Fax: {{ site.fax }}</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="{{ site.instagram_url }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="{{ site.facebook_url }}" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="{{ site.twitter_url }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                </ul>
             </div>
-            <div class="col-md-4">
-                <hr class="light">
-                <p>Facebook</p>
-                <p>Twitter</p>
-            </div>
-            <div class="col-md-4">
-                <hr class="light">
-                <p>Blackboard</p>
-                <p>Emergency Preparedness</p>
-                <p>Employment</p>
-                <p>Feedback</p>
-                <p>Privacy Statement and Legal Notices</p>
+            <div class="col-sm-6">
+                <ul class="list-unstyled resources">
+                    {% for item in site.data.footer %}
+                    <li>
+                        <a href="{% if item.local_path == true %}{{ item.link | absolute_url }}{% else %}{{ item.link }}{% endif %}">{{ item.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
             <div class="col-12">
                 <hr class="light">
-                <p>&copy; Copyright 2019 University of Miami. All Rights Reserved</p>
+                <p>&copy; Copyright {{ 'now' | date: "%Y" }} | University of Miami. All Rights Reserved.</p>
             </div>
         </div>
     </div>

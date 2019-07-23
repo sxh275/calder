@@ -9,4 +9,23 @@
 
 }
 
+.resource {
+  img {
+    border-radius: $border-radius;
+    height: 428px;
+    width: 428px;
+  }
 
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    .nav-link {
+      padding: 0;
+    }
+  }
+}
+
+li {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}

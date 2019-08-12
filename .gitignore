@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+_site
+.sass-cache
+.jekyll-metadata
+.idea/
+calder.iml
+=======
 .DS_Store
 #Jekyll
 /_site/
@@ -9,3 +16,4 @@ node_modules/
 # IDE
 .idea/
 calder.iml
+>>>>>>> 5b89c556c4fd704f63623400a339e9cc2d2b0c3e

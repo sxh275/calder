@@ -23,7 +23,7 @@ instagram_url: https://www.instagram.com/caldermedlib/
 twitter_url: https://twitter.com/CalderMedLib?lang=en
 
 # Google services
-#google_analytics: UA-2776065-1
+google_analytics: UA-2776065-1
 
 # Build settings
 charset: UTF-8

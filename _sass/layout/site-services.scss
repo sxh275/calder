@@ -12,8 +12,8 @@
 .resource {
   img {
     border-radius: $border-radius;
-    height: 380px;
-    width: 380px;
+    height: 300px;
+    width: 300px;
   }
 
 
@@ -24,8 +24,14 @@
   }
 }
 
+ul{
+  margin-left: 20px;
+}
+
+
+
 li {
   list-style-type: none;
-  margin-left: 0;
-  padding: 0;
+  margin-left: 20px;
+
 }

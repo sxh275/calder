@@ -19,10 +19,8 @@
   position: relative;
   width: 100%;
   -ms-touch-action: pan-y;
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  border-radius: 2px;
+
+
 }
 
 .owl-carousel .owl-wrapper {
@@ -74,5 +72,130 @@
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
+
 }
 
+.pure-g {
+  letter-spacing: -.31em;
+  text-rendering: optimizespeed;
+  margin-bottom:10px;
+  background-color: #e3e3e3;
+  height:180px;
+}
+
+
+.pure-u-1 {
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  width: 97.4%;
+  margin-top:5px;
+  font-size:12px;
+
+}
+
+#mini_features {
+  margin: 0;
+  color: #333;
+  padding: 10px 0 0px 0;
+  text-align: left;
+
+
+
+  overflow: hidden;
+
+}
+
+#mini_features .item {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 5px 0;
+}
+
+#mini_features .owl-item {
+  float: left;
+
+
+}
+
+
+#mini_features h3 {
+
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+
+}
+
+#mini_features h3 a {
+  color: #333;
+  text-decoration: none;
+  font-size:13px;
+}
+
+#mini_features h3 a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.carousel_picture {
+  position: relative;
+  float: left;
+  display: block;
+  margin: 0em 1em 0 0em;
+  padding: 0.3em;
+  background-color: #EFEFEF;
+
+
+}
+
+a.prev, a.next {
+  background: url(/calder/assets/images/mini_buttons.png) no-repeat transparent;
+  width: 18px;
+  height: 18px;
+  display: none;
+  position: relative;
+  z-index: 1000;
+  opacity: 1;
+  top: 0;
+  cursor: pointer;
+}
+a.prev {   margin-left: 15px;
+  background-position: 0 0;
+}
+a.prev:hover {		background-position: 0 -18px; }
+a.prev.disabled {	background-position: 0 -36px !important;  }
+a.next {			margin-left: 10px;
+  background-position: -18px 0; }
+a.next:hover {		background-position: -18px -18px; }
+a.next.disabled {	background-position: -18px -36px !important;  }
+a.prev.disabled, a.next.disabled {
+  cursor: default;
+}
+
+a.prev span, a.next span {
+  display: none;
+}
+
+a.prev, a.next {
+  display: inline-block;
+}
+
+
+#news_events h3 {
+  color: #333 !important;
+  padding: 5px 0px 8px 5px;
+  margin: 0px 0 -10px 0;
+  max-width: 240px;
+  font-size: 1.1em;
+
+  background-color: #e3e3e3;
+
+}
+
+#news_events h3 a:hover {
+  color: #333;
+  text-decoration: underline;
+}

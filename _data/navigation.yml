@@ -47,5 +47,5 @@
       subpath:
   dropdown_id: OtherLibDropdown
 - name: Staff List
-  link: /staff.html
+  link: https://spmed.library.miami.edu/subjects/staff.php
   local_path: true

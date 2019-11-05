@@ -1,14 +1,130 @@
 <section class="search-area d-none d-lg-block">
-    <div class="full-search">
-        <div class="container text-center">
-            <div class="search-group">
-                <div class="uml-site-search-container"></div>
+</br>
+    <div class="container">
+    <div id="widget">
+        <ul class="nav nav-tabs" id="tabs">
+            <li><a href="#catalog">uSearch</a> </li>
+            <li><a href="#pubmed">PubMed</a> </li>
+            <li><a href="#uptodate">UpToDate</a> </li>
+            <li><a href="#dynamed">DynaMed</a> </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane" id="sc6">
+                <div class="tab-content-inner">
 
+                    <!-- Catalog search form -->
+
+                    <form id="simple2" name="searchForm2" method="get" target="_self" action="https://miami-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=default_tab&search_scope=default_scope&vid=med_new&offset=0" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo2()">
+
+                        <!-- Customizable Parameters -->
+                        <input type="hidden" name="institution" value="01UOML">
+                        <input type="hidden" name="vid" value="med_new">
+                        <!--<input type="hidden" name="tab" value="primo_central">
+      <input type="hidden" name="search_scope" value="Primo_Central">   -->
+                        <input type="hidden" name="mode" value="Basic">
+
+                        <!-- Fixed parameters -->
+                        <input type="hidden" name="displayMode" value="full">
+                        <input type="hidden" name="bulkSize" value="10">
+                        <input type="hidden" name="highlight" value="true">
+                        <input type="hidden" name="dum" value="true">
+                        <input type="hidden" name="query" id="primoQuery2">
+                        <input type="hidden" name="displayField" value="all">
+                        <select name="search_scope">
+                            <option value="Everything"> Everything</option>
+                            <option value="Primo_Central">Electronic Resources</option>
+                            <option value="default_scope"> Library Catalog</option>
+                        </select>
+                        <input type="text" id="primoQueryTemp2" value="" size="35" class="searchinput-2" placeholder="Search Library Resources">
+
+                        <!-- Search Button -->
+                        <input id="go" title="Search" onclick="searchPrimo2()" type="submit" value="Search" alt="Search">
+                    </form>
+                    <script type="text/javascript">
+
+                        function searchPrimo2() {
+                            document.getElementById("primoQuery2").value = "any,contains," + document.getElementById("primoQueryTemp2").value.replace(/[,]/g, " ");
+                            document.forms["searchForm2"].submit();
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="tab-pane" id="sc2">
+                <div class="tab-content-inner">
+                    <form action="https://www.ncbi.nlm.nih.gov/pubmed?otool=flumrlib" class="SSCentralSearchSearchForm" name="searchForm" method="post" target="new">
+                        <input name="SS_LibHash" value="FY6AF6XB5M" type="hidden" />
+                        <input name="locale" value="en-us" type="hidden" />
+                        <input name="action" value="start" type="hidden" />
+                        <input name="dbIDList" value="NPM" type="hidden" />
+                        <input style="width:75%;" type="text" class="SSCentralSearchSearchCriteria" value="" name="term" placeholder="Search PubMed" />
+                        <button type="submit" class="btn btn-mini">Go</button>
+                        <a href="http://www.ncbi.nlm.nih.gov/pubmed/advanced" style="margin-left:5px;">Advanced Search</a>
+                    </form>
+                </div>
+            </div>
+            <div class="tab-pane" id="sc3">
+                <div class="uptodatetab-content-inner" id="uptodatesearchcontainer" style="width:315px; height:80px; padding: 0px; background-color: #de752f; text-align: left; font-family: Helvetica; font-size: 11px; line-height: 14px;"> If you are seeing this, you have attempted to link to the UpToDate search box but are experiencing a problem. Please visit <a href="http://www.uptodate.com/" rel="nofollow">UpToDate</a> for more information. </div>
+                <script language="javascript" type="text/javascript" src="http://www.uptodate.com/widget.js?widgetId=2&clientId=40622D5A504559D7&width=315&height=80"></script>
+            </div>
+            <div class="tab-pane" id="sc7">
+                <div class="tab-content-inner">
+                    <!-- EBSCOhost Custom Search Box Begins -->
+                    <script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+                    <style type="text/css">
+                        .ebscohostCustomSearchBox {font-family:Helvetica,Verdana,Arial,sans-serif;width:392px;}
+                        .ebscohostCustomSearchBox #databaseblock {width:98%;}
+                        .ebscohostCustomSearchBox .choose-db-list{ list-style-type:none;padding:0;margin:10px 0 0 0;font-size:9pt; width:100%;}
+                        .ebscohostCustomSearchBox .choose-db-check{ width:20px;float:left;padding-left:5px;padding-top:5px; }
+                        .ebscohostCustomSearchBox .choose-db-detail{ margin-left:30px;border-left:solid 1px #E7E7E7;padding:5px 11px 7px 11px;line-height:1.4em; }
+                        .ebscohostCustomSearchBox .summary { background-color:#1D5DA7;color:#FFFFFF;border:solid 1px #1D5DA7; }
+                        .ebscohostCustomSearchBox .two, .ebscohostCustomSearchBox .one, .ebscohostCustomSearchBox .selected {border:solid 1px #E7E7E7; border-top:0;}
+                        .ebscohostCustomSearchBox #disciplineBlock { width:auto; }
+                        .ebscohostCustomSearchBox .limiter { float:left;margin:0;padding:0;width:50%; }
+
+                        .ebscohostCustomSearchBox #ebscohostsearchtext { width: 144px; }
+                        .ebscohostCustomSearchBox #ebscohostsearchtext.edspub { width: 245px; }
+                        .ebscohostCustomSearchBox .ebscohostCustomSearchBox .ebscohost-search-button.edspub {
+                            border: 1px solid #156619;
+                            padding: 5px 10px !important;
+                            border-radius: 3px;
+                            color: #fff;
+                            font-weight: bold;
+                            background-color: #156619;
+                        }
+                        .ebscohostCustomSearchBox .ebscohost-title.edspub {
+                            color: #1c7020;
+                            font-weight: bold;
+                        }
+
+                    </style>
+                    <form class="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post" style="overflow:hidden;">
+                        <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
+                        <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://access.library.miami.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=uid&user=s3573515&password=umsm-20&profile=dmp" />
+                        <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" />
+                        <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+                        <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+                        <div style="background-image:url('https://support.ebsco.com/images/logos/dynamed150.gif'); background-repeat:no-repeat; height:75px; width:392px; font-size:9pt; color:#353535;">
+                            <div style="padding-top:0px;padding-left:167px;"> <span class="ebscohost-title " style="font-weight:bold;">Search DynaMed</span>
+                                <div style="width:600px;">
+                                    <input id="ebscohostsearchtext" class="" name="ebscohostsearchtext" type="text" size="23" style="font-size:9pt;padding-left:5px;margin-left:0px;" />
+                                    <input type="submit" value="Search" class="ebscohost-search-button" style="font-size:9pt;padding-left:5px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- EBSCOhost Custom Search Box Ends -->
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
             </div>
-        </div>
-    </div>
+
+
+    </br>
+
 </section>
+

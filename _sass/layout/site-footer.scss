@@ -1,5 +1,6 @@
 footer {
   background-color: $feature;
+  padding:10px;
 
   i {
     font-size: 1.5rem;
@@ -13,6 +14,11 @@ footer {
   .resources {
     font-size: 0.875rem;
     text-align: left;
+  }
+
+  .socialmedia {
+    margin-right:40px;
+
   }
 
 }

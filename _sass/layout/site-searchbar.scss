@@ -45,7 +45,6 @@
 #widget .tab-content {
 
   width: 875px;
-
   height:95px;
   max-height:95px;
   margin-top:3px;
@@ -54,9 +53,9 @@
   vertical-align:middle;
   background-color: $feature;
   border:1px solid #dcd6be;
-  border-bottom-left-radius:4px;
-  border-bottom-right-radius:4px;
-  border-top-right-radius:4px;
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  border-top-right-radius:3px;
 
 
 
@@ -72,16 +71,16 @@
   font-weight:bold;
   max-height:24px;
   padding:6px 25px 6px 25px;
-  color:#D9E0BF;
-  background-color:#7B9A70;
+  color:#FFFFFF;
+  background-color:#F47321;
   border:none;
-  text-shadow:#000 -1px 1px 1px;
+
 }
 #widget .nav-tabs li.active {
   color:#de752f;
 }
 #widget .nav-tabs li a:hover {
-  color:#F5E9B8;
+  color:#007bff;
   background-color:#de752f;
   border:none;
 }

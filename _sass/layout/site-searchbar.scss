@@ -11,6 +11,7 @@
   margin-top:0px;
 
 
+
 }
 
 #widget #tabs {
@@ -61,9 +62,9 @@
 
 }
 #widget .nav-tabs > .active > a, #widget .nav-tabs > .active > a:hover {
-  color:#F5E9B8;
+  color:#FFFFFF;
   cursor:default;
-  background-color: $feature;
+  background-color: #005030;
   border:none;
 }
 #widget .nav-tabs li a {
@@ -176,7 +177,7 @@
   color:#4F4F4F;
 }
 #widget a, #widget a:link, #widget a:visited {
-  color:#F5E9B8;
+  color:#007bff;
 }
 .nav-tabs:before, .nav-pills:before, .nav-tabs:after, .nav-pills:after {
   display:table;

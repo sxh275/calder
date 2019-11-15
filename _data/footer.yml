@@ -7,9 +7,9 @@
 - name: Employment
   link: https://www.miami.edu/employment
   local_path:
-- name: Feedback
+- name: Report Site Issue
   link: "mailto:sxh2751@med.miami.edu"
   local_path:
-- name: Privacy Statement and Legal Notices
+- name: Privacy
   link: https://welcome.miami.edu/privacy-and-legal/privacy/index.html
   local_path:

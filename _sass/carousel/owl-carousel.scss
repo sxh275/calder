@@ -1,0 +1,227 @@
+/*
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+.container-fluid-carousel{
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-align:center;
+  background-color: #e3e3e3;
+}
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+
+
+}
+
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+.owl-carousel .owl-item {
+  float: left;
+
+}
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+
+}
+
+.pure-g {
+  letter-spacing: -.31em;
+  text-rendering: optimizespeed;
+  margin-bottom:10px;
+  background-color: #e3e3e3;
+  height:250px;
+
+
+}
+
+
+.pure-u-1 {
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  width: 97.4%;
+  margin-top:5px;
+  font-size:16px;
+  max-width: 1280px;
+
+}
+
+.pure-u-2 {
+  display: inline-block;
+
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  width: 97.4%;
+  margin-top:5px;
+  font-size:15;
+  max-width: 1280px;
+  line-height: 1.4em;
+
+}
+
+#mini_features {
+  margin: 0;
+  color: #333;
+  padding: 10px 0px 0px 0;
+  text-align: left;
+
+}
+
+#mini_features .item {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 5px 0;
+
+}
+
+#mini_features .owl-item {
+  float: left;
+
+}
+
+
+#mini_features h3 {
+
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+
+}
+
+#mini_features h3 a {
+  color: #333;
+  text-decoration: none;
+  font-size:15px;
+}
+
+#mini_features h3 a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.carousel_picture {
+  position: relative;
+  float: left;
+  display: block;
+  margin: 0em 1em 0 0em;
+  padding: 0.3em;
+  height: 150px;
+  width:150px;
+  background-color: #EFEFEF;
+
+
+}
+
+a.prev, a.next {
+  background: url(/calder/assets/images/mini_buttons.png) no-repeat transparent;
+  width: 18px;
+  height: 18px;
+  display: none;
+  position: relative;
+  z-index: 1000;
+  opacity: 1;
+  top: 0;
+  cursor: pointer;
+}
+a.prev {   margin-left: 15px;
+  background-position: 0 0;
+}
+a.prev:hover {		background-position: 0 -18px; }
+a.prev.disabled {	background-position: 0 -36px !important;  }
+a.next {			margin-left: 10px;
+  background-position: -18px 0; }
+a.next:hover {		background-position: -18px -18px; }
+a.next.disabled {	background-position: -18px -36px !important;  }
+a.prev.disabled, a.next.disabled {
+  cursor: default;
+}
+
+a.prev span, a.next span {
+  display: none;
+}
+
+a.prev, a.next {
+  display: inline-block;
+}
+
+
+#news_events h3 {
+  color: #333 !important;
+  padding: 5px 0px 8px 5px;
+  margin: 0px 0 -10px -10px;
+  max-width: 300px;
+  font-size: 1.1em;
+
+  background-color: #e3e3e3;
+
+}
+
+#news_events h3 a:hover {
+  color: #333;
+  text-decoration: underline;
+}

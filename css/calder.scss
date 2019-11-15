@@ -51,8 +51,16 @@
 @import 'fontawesome/brands';
 
 // Custom - Layout
+@import 'layout/site-announcements';
 @import 'layout/site-header';
 @import 'layout/site-footer';
+@import 'layout/site-searchbar';
+@import 'layout/site-services';
+
 
 // Custom - Elements
 @import 'elements/general';
+
+// Carousel
+@import 'carousel/owl-carousel';
+@import 'carousel/owl-theme';

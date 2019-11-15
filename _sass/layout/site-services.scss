@@ -1,0 +1,37 @@
+.featured-resource {
+  height: 300px;
+  width: 300px;
+
+}
+
+.site-services {
+  background-color: $feature;
+
+ }
+
+.resource {
+  img {
+    border-radius: $border-radius;
+    height: 300px;
+    width: 300px;
+  }
+
+
+  @media (min-width: map-get($grid-breakpoints, lg)) {
+    .nav-link {
+      padding: 0;
+    }
+  }
+}
+
+ul{
+  margin-left: 20px;
+}
+
+
+
+li {
+  list-style-type: none;
+  margin-left: 20px;
+
+}

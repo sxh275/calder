@@ -5,8 +5,29 @@
   link: /askalibrarian.html
   local_path: true
 - name: Forms
-  link: /forms.html
-  local_path: true
+  dropdowns:
+  - subname: Bibliographic Search Request
+    sublink: https://docs.google.com/forms/d/e/1FAIpQLSc3kTUJkQkXdI9wQE9qxTx2cZknMzKpuWxBJ4pvIi8EshzlZQ/viewform
+    subpath:
+  - subname: E-Journal Access Problem
+    sublink: https://docs.google.com/forms/d/e/1FAIpQLSeVGQB-G_tDPrVz8x0g1UMSjfmeP5wkT7XIi5uc5DzQdtDCzw/viewform
+    subpath:
+  - subname: General Feedback
+    sublink: https://docs.google.com/forms/d/e/1FAIpQLSeSOuav67BTuupgVsJZqI9iuDiB-M2SmiFOKCHWSdp8bDSPvw/viewform
+    subpath:
+  - subname: Interlibrary Loan / Journal Photocopy Request
+    sublink: https://docs.google.com/forms/d/e/1FAIpQLSeX6rEcfnX1IhNk7a4IO5XOJjCpNzrNc-d6blshVDhCTW_UUw/viewform
+    subpath:
+  - subname: Purchase / Subscription Request Form
+    sublink: https://docs.google.com/forms/d/e/1FAIpQLScgFcqac18epUPLHA6unIaOZQfhrj5SiJhwGf1rluhdAPmxaw/viewform
+    subpath:
+    subname: Reference Question
+    sublink: https://docs.google.com/forms/d/e/1FAIpQLSe1nOHkK2B0Pnb2ZRo-2RyOyvDPQderJoXkEnqrsATh3JNA1Q/viewform
+    subpath:
+    subname: Register for a Class
+    sublink: https://docs.google.com/forms/d/e/1FAIpQLScfSMky1QFPYvhlTBVRVZ-J3xx-SZ0Z3BM558HD4-8AmRqopA/viewform
+    subpath:
+  dropdown_id: FormsDropdown
 - name: Mission
   link: /mission.html
   local_path: true
@@ -24,10 +45,7 @@
     - subname: University of Miami Law Library
       sublink: https://library.miami.edu/rsmaslib/index.html
       subpath:
-    - subname: Inside
-      sublink: /about.html
-      subpath: true
   dropdown_id: OtherLibDropdown
 - name: Staff List
-  link: /staff.html
+  link: https://spmed.library.miami.edu/subjects/staff.php
   local_path: true

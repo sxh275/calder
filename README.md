@@ -17,7 +17,10 @@ Calder Library Jekyll website
 
 * Localhost preview URL:  http://localhost:4000/
 
+* **Dev Build:** bundle exec jekyll build --config=_config_dev.yml
+
 * **Production Build:** bundle exec jekyll build --config=_config_prod.yml
+
 
 ### Notes
 * Font Awesome 5.8.1

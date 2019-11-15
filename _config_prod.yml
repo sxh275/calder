@@ -4,7 +4,7 @@ email: sxh2751@med.miami.edu
 meta_description: The University of Miami Calder Medical Library services and activities form the scope of knowledge-based information through clinically-oriented resources and systems to the Miller School of Medicine and affiliated organizations.
 meta_keywords: University of Miami, UMH, Louis Calder Memorial Library, UM, Miller, Medicine, Nursing, Health Studies, Graduate
 #baseurl: "" # subpath of your site, e.g. /blog
-url: "https://calder.med.miami.edu/"
+url: "https://calder.med.miami.edu"
 
 author: Louis Calder Memorial Library
 street_address: 1601 NW 10th Ave

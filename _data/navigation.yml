@@ -1,6 +1,14 @@
 - name: About
-  link: /about.html
-  local_path: true
+  dropdowns:
+  - subname: About
+    sublink: /about.html
+    subpath:
+  - subname: Mission
+    sublink: https://calder.med.miami.edu/mission.html
+    subpath:
+  - subname: People
+    sublink: https://spmed.library.miami.edu/subjects/staff.php
+    subpath:
 - name: Ask A Librarian
   link: /askalibrarian.html
   local_path: true
@@ -28,9 +36,6 @@
     sublink: https://docs.google.com/forms/d/e/1FAIpQLScfSMky1QFPYvhlTBVRVZ-J3xx-SZ0Z3BM558HD4-8AmRqopA/viewform
     subpath:
   dropdown_id: FormsDropdown
-- name: Mission
-  link: /mission.html
-  local_path: true
 - name: Other Libraries
   dropdowns:
     - subname: Mary and Edward Norton Library of Ophthalmology

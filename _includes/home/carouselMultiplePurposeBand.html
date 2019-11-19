@@ -1,0 +1,151 @@
+<div class="container">
+    <div class="full-band purple-gradient">
+        <script>
+            //Random Initial Band
+            $( function(){
+                var item = $('#carouselMultiplePurposeBand .carousel-item');
+                var numberofSlides = $('#carouselMultiplePurposeBand .carousel-item').length;
+                var currentSlide = Math.floor((Math.random() * numberofSlides));
+
+                $('#carouselMultiplePurposeBand .carousel-indicators li').each(function(){
+                    var slideValue = $(this).attr('data-slide-to');
+                    if(currentSlide == slideValue) {
+                        $(this).addClass('active');
+                        item.eq(slideValue).addClass('active');
+                    } else {
+                        $(this).removeClass('active');
+                        item.eq(slideValue).removeClass('active');
+                    }
+                });
+            });
+        </script>
+        <section class="section">
+            <div id="carouselMultiplePurposeBand" class="carousel slide carousel-band" data-ride="false" data-interval="false">
+                <ol class="carousel-indicators d-none d-lg-flex">
+                    <li data-target="#carouselMultiplePurposeBand" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselMultiplePurposeBand" data-slide-to="1"></li>
+                    <li data-target="#carouselMultiplePurposeBand" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="band-content">
+                            <div class="container">
+                                <h3>Working with Data?</h3>
+                                <h4>Meet your Data Services Librarian: Cameron Riopelle</h4>
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-7">
+                                        <p>Learn how to:</p>
+                                        <ul>
+                                            <li>Find, collect, and store data</li>
+                                            <li>Use research software such as Atlas.ti, NVivo, R, SAS, SPSS</li>
+                                            <li>Analyze data through qualitative and quantitative methods</li>
+                                        </ul>
+                                        <ul class="list-unstyled d-sm-flex d-md-inline-block d-xl-flex flex-sm-row flex-sm-nowrap flex-xl-nowrap justify-content-sm-start justify-content-xl-start band-contact">
+                                            <li>
+                                                <i class="fas fa-phone fancy-icon"></i> <a href="tel:1-305-284-4055" class="no-decoration default">(305) 284-4055</a>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-envelope fancy-icon"></i> <a href="mailto:criopelle@miami.edu" class="no-decoration default">criopelle@miami.edu</a>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-edit fancy-icon"></i> <a href="http://criopelle.youcanbook.me" class="no-decoration default">http://criopelle.youcanbook.me</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-lg-5">
+                                        <div class="text-center">
+                                            <div class="img-accent">
+                                                <img src="https://umlibraryeast.blob.core.windows.net/uploads/2018/04/criopelle-band.jpg" class="img-fluid img-circle">
+                                            </div>
+                                            <p class="band-quote">"Whether you are working on a paper, project, publication, or grant application, I am here to help."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="band-content">
+                            <div class="container">
+                                <h3>Performing spatial analysis?</h3>
+                                <h4>Meet your GIS Services Librarian: Abraham Parrish</h4>
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-7">
+                                        <p>Learn how to:</p>
+                                        <ul>
+                                            <li>Capture, store, manipulate, analyze, manage, and present geospatial data.</li>
+                                            <li>Use the ESRI suite of GIS software such as ArcGIS Pro, ArcGIS for Desktop, ArcGIS Online, and Collector for ArcGIS.</li>
+                                        </ul>
+                                        <ul class="list-unstyled d-sm-flex d-md-inline-block d-xl-flex flex-sm-row flex-sm-nowrap flex-xl-nowrap justify-content-sm-start justify-content-xl-start band-contact">
+                                            <li>
+                                                <i class="fas fa-phone fancy-icon"></i> <a href="tel:1-305-284-9488" class="no-decoration default">(305) 284-9488</a>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-envelope fancy-icon"></i> <a href="mailto:aparrish@miami.edu" class="no-decoration default">aparrish@miami.edu</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-lg-5">
+                                        <div class="text-center">
+                                            <div class="img-accent">
+                                                <img src="https://umlibraryeast.blob.core.windows.net/uploads/2018/04/aparrish-band.jpg" class="img-fluid img-circle">
+                                            </div>
+                                            <p class="band-quote">"With over 24 years of GIS experience and current knowledge of cutting edge GIS skills and data sources, I am prepared to provide very basic to in-depth GIS consultations to all levels of users."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="band-content">
+                            <div class="container">
+                                <h3>Need Help With Research Data Management?</h3>
+                                <h4>Meet Library Research Data Scientist: Timothy Norris</h4>
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-7">
+                                        <p>Need help with:</p>
+                                        <ul>
+                                            <li>a DOI for your data?</li>
+                                            <li>a data management plan?</li>
+                                            <li>sharing, publication or preservation of data?</li>
+                                        </ul>
+                                        <ul class="list-unstyled d-sm-flex d-md-inline-block d-xl-flex flex-sm-row flex-sm-nowrap flex-xl-nowrap justify-content-sm-start justify-content-xl-start band-contact">
+                                            <li>
+                                                <i class="fas fa-phone fancy-icon"></i> <a href="tel:1-305-284-2826" class="no-decoration default">(305) 284-2826</a>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-envelope fancy-icon"></i> <a href="mailto:tnorris@miami.edu" class="no-decoration default">tnorris@miami.edu</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-lg-5">
+                                        <div class="text-center">
+                                            <div class="img-accent">
+                                                <img src="https://umlibraryeast.blob.core.windows.net/uploads/2018/04/tnorris-band.jpg" class="img-fluid img-circle">
+                                            </div>
+                                            <p class="band-quote">"From lone researcher to interdisciplinary big science, I can help with research data wrangling, visualization, publication, and preservation."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev no-decoration" href="#carouselMultiplePurposeBand" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next no-decoration" href="#carouselMultiplePurposeBand" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+    </div>
+</div>

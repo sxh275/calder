@@ -51,6 +51,6 @@
       sublink: https://library.miami.edu/rsmaslib/index.html
       subpath:
   dropdown_id: OtherLibDropdown
-- name: Staff List
-  link: https://spmed.library.miami.edu/subjects/staff.php
+- name: Remote Access
+  link: https://calder.med.miami.edu/proxy.html
   local_path: true

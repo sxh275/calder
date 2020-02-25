@@ -3,130 +3,34 @@
 
 }
 
-#widget select {
-  -webkit-appearance:menulist;
-}
-#widget {
-
-  margin-top:0px;
 
 
 
-}
-
-#widget #tabs {
-
-  height:21px;
-  margin-bottom:0;
-  font-size:12px;
-  border-bottom:none;
 
 
 
-}
-#widget label, input[type="text"] {
-  font-size:12px;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans serif;
-  font-weight:normal;
-}
-#widget #tabs li a {
-  line-height:20px;
-  text-decoration:none;
-  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-
-}
-#widget #databases label {
-  width:25%;
-}
-#widget #ejournals label {
-  width:20%;
-}
-#widget .tab-content {
-
-  width: 875px;
-  height:95px;
-  max-height:95px;
-  margin-top:3px;
-  padding-top:3px;
-  padding-bottom:3px;
-  vertical-align:middle;
-  background-color: $feature;
-  border:1px solid #dcd6be;
-  border-bottom-left-radius:3px;
-  border-bottom-right-radius:3px;
-  border-top-right-radius:3px;
 
 
-
-}
-#widget .nav-tabs > .active > a, #widget .nav-tabs > .active > a:hover {
-  color:#FFFFFF;
-  cursor:default;
-  background-color: #005030;
-  border:none;
-}
-#widget .nav-tabs li a {
-  font-size:15px;
-  font-weight:bold;
-  max-height:24px;
-  padding:6px 25px 6px 25px;
-  color:#FFFFFF;
-  background-color:#F47321;
-  border:none;
-
-}
-#widget .nav-tabs li.active {
-  color:#de752f;
-}
-#widget .nav-tabs li a:hover {
-  color:#007bff;
-  background-color:#de752f;
-  border:none;
-}
-#widget #tabs li {
-  max-height:24px;
-  padding-bottom:1px;
-  list-style-type:none;
-}
-#widget .tab-content-inner {
-  margin:10px 10px 20px 10px;
-  line-height:2.0em;
-}
-
-#widget #sc6 .tab-content-inner {
-  margin:5px 10px 20px 10px;
-  line-height:2.0em;
-}
-
-#widget .uptodatetab-content-inner {
+.uptodatetab-content-inner {
   margin:-5px 10px 18px 100px;
   line-height:2.0em;
 }
-#widget .pubmedtab-content-inner {
+
+.pubmedtab-content-inner {
   margin:25px 10px 18px 10px;
   line-height:2.0em;
 
 }
 
 
-#widget #databases .tab-content-inner {
-  margin:6px 10px 5px;
-}
-#widget #ejournals .tab-content-inner {
-  margin:6px 10px 5px;
-}
-#widget #pubmed .tab-content-inner {
+#pubmed .tab-content-inner {
   margin:14px 10px 5px;
 }
-#widget #ejournals .tab-content-inner {
+
+#catalog .tab-content-inner {
   margin:6px 10px 5px;
 }
-#widget #catalog .tab-content-inner {
-  margin:6px 10px 5px;
-}
-#widget #catalog .tab-content-inner label {
+#catalog .tab-content-inner label {
   margin-bottom:0;
   padding-top:4px;
   font-size:12px;
@@ -135,50 +39,31 @@
   zoom:1;
   width:50%;
 }
-#widget #ebooks .tab-content-inner {
-  margin:6px 10px 5px;
-}
-#widget #ebooks .tab-content-inner label {
-  margin-bottom:0;
-  padding-top:4px;
-  font-size:12px;
-  display:inline-block;
-  *display:inline;
-  zoom:1;
-  width:50%;
-}
-#widget .tab-content-inner form {
+
+.tab-content-inner form {
   margin-bottom:0px;
 }
-#widget select {
+select {
   margin-bottom:5px;
   padding:0px;
   height:20px;
   width:40%;
   font-size:14px;
 }
-#widget .tab-content-inner form input[type="text"] {
+.tab-content-inner form input[type="text"] {
   margin-bottom:5px;
   padding:2px 6px 2px;
   width:95%;
   font-size:14px;
 
 }
-#widget #wdgtPatient-problem, #widget #wdgtIntervention {
-  width:40%;
-}
-#widget #wdgtDrug-name {
-  display:none;
-}
-#widget .tab-pane {
+
+
+.tab-pane {
   margin-top:0px;
 }
-#widget label {
-  color:#4F4F4F;
-}
-#widget a, #widget a:link, #widget a:visited {
-  color:#007bff;
-}
+
+
 .nav-tabs:before, .nav-pills:before, .nav-tabs:after, .nav-pills:after {
   display:table;
   line-height:0;

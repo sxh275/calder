@@ -1,7 +1,9 @@
-.search-area{
+.search-area {
   background-color: $feature;
 
-}li {
+}
+
+li {
    display: list-item;
    text-align: -webkit-match-parent;
  }
@@ -57,4 +59,16 @@ select {
 
 .tab-content>.tab-pane, .pill-content>.pill-pane {
   display:none
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #f47321;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f47321;
+  border-color: #f47321;
 }

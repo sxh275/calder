@@ -1,24 +1,24 @@
 
 <div class="container">
-    <div class="tab-content">
-        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link no-decoration default active" id="pills-catalog-tab" data-toggle="pill" href="#pills-catalog" role="tab" aria-controls="pills-catalog" aria-selected="true">uSearch</a>
+                <a class="nav-link active" id="catalog-tab" data-toggle="tab" href="#catalog" role="tab" aria-controls="catalog" aria-selected="true">uSearch</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link no-decoration default" id="pills-pubmed-tab" data-toggle="pill" href="#pills-pubmed" role="tab" aria-controls="pills-pubmed" aria-selected="false">PubMed</a>
+                <a class="nav-link no-decoration default" id="pubmed-tab" data-toggle="tab" href="#pubmed" role="tab" aria-controls="pubmed" aria-selected="false">PubMed</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link no-decoration default" id="pills-uptodate-tab" data-toggle="pill" href="#pills-uptodate" role="tab" aria-controls="pills-uptodate" aria-selected="false">UptoDate</a>
+                <a class="nav-link no-decoration default" id="uptodate-tab" data-toggle="tab" href="#uptodate" role="tab" aria-controls="uptodate" aria-selected="false">UptoDate</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link no-decoration default" id="pills-dynamed-tab" data-toggle="pill" href="#pills-dynamed" role="tab" aria-controls="pills-dynamed" aria-selected="false">DynaMed</a>
+                <a class="nav-link no-decoration default" id="dynamed-tab" data-toggle="tab" href="#dynamed" role="tab" aria-controls="dynamed" aria-selected="false">DynaMed</a>
             </li>
         </ul>
 
 
-
-        <div class="tab-pane fade show active" id="pills-catalog" role="tabpanel" aria-labelledby="pills-catalog-tab">
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="catalog" role="tabpanel" aria-labelledby="catalog-tab">
 
 
             <form name="searchForm2" method="get" target="_self" action="https://miami-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=default_tab&search_scope=default_scope&vid=med_new&offset=0" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo2()">
@@ -67,7 +67,7 @@
         </div>
 
 
-        <div class="tab-pane fade" id="pills-pubmed" role="tabpanel" aria-labelledby="pills-pubmed-tab">
+        <div class="tab-pane fade" id="pubmed" role="tabpanel" aria-labelledby="pubmed-tab">
             <div class="form-group col-md-8">
 
                 <form action="https://www.ncbi.nlm.nih.gov/pubmed?otool=flumrlib" class="form-control" name="searchForm" method="post" target="new">
@@ -93,7 +93,7 @@
         </div>
 
 
-        <div class="tab-pane fade" id="pills-uptodate" role="tabpanel" aria-labelledby="pills-uptodate-tab">
+        <div class="tab-pane fade" id="uptodate" role="tabpanel" aria-labelledby="uptodate-tab">
             <div class="form-group col-md-8">
                 <div class="uptodatetab-content-inner" id="uptodatesearchcontainer" style="width:315px; height:80px; padding: 0px; text-align: left; font-family: Helvetica; font-size: 11px; line-height: 14px;"> If you are seeing this, you have attempted to link to the UpToDate search box but are experiencing a problem. Please visit <a href="http://www.uptodate.com/" rel="nofollow">UpToDate</a> for more information. </div>
                 <script language="javascript" type="text/javascript" src="http://www.uptodate.com/widget.js?widgetId=2&clientId=40622D5A504559D7&width=315&height=80"></script>
@@ -102,7 +102,7 @@
 
 
 
-        <div class="tab-pane fade" id="pills-dynamed" role="tabpanel" aria-labelledby="pills-dynamed-tab">
+        <div class="tab-pane fade" id="dynamed" role="tabpanel" aria-labelledby="dynamed-tab">
             <div class="form-group col-md-8">
                 <!-- EBSCOhost Custom Search Box Begins -->
                 <script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
@@ -152,6 +152,6 @@
                 <!-- EBSCOhost Custom Search Box Ends -->
             </div>
         </div>
-    </div>
 
+</div>
 </div>
